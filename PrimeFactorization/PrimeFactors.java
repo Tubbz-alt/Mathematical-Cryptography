@@ -40,17 +40,4 @@ public class PrimeFactors {
 		}
 		return factors;
 	}
-
-
-	public static void main(String[] args) { 
-		System.out.println("this is sample");
-		BigInteger prime; 
-		do {
-			prime = BigInteger.probablePrime(40, new Random());
-		} while (!prime.isProbablePrime(1));
-		//BigInteger number = new BigInteger("840759203630041");
-		BigInteger phi = prime.subtract(BigInteger.ONE);
-		System.out.println("this is prime number : " + prime);
-		System.out.println("prime factors in f1 : " + primeFactorsV2(phi));
-	}
 }
