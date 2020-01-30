@@ -1,2 +1,2 @@
 # Mathematical Cryptography
-some number theory problem and thats solutions in the java programming language that maybe use in the cryptography and etc.
+an intoduction to the mathematical cryptography and see the some of the number theory problem and that solutions in java programming language.
