@@ -1,2 +1,2 @@
 # Prime Factorization
-in the number theory on of the most important applization of the prime number is that we cane factored any integer number to the powers of prime number. 
+in the number theory one of the most important application of the prime number is that we can factored any integer number to the powers of prime number. 
