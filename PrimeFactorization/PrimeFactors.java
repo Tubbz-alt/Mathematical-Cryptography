@@ -2,26 +2,13 @@ import java.util.Set;
 import java.util.Random;
 import java.util.HashSet; 
 import java.math.BigInteger;
+import java.util.List; 
+import java.util.ArrayList; 
+
 public class PrimeFactors {
-	//simple algorithm for finding prime factorization of number.
-	public static Set<BigInteger> primeFactorsV1(BigInteger number) {
-		Set<BigInteger> factors = new HashSet<BigInteger>();
-		while(number.mod(BigInteger.valueOf(2)).equals(BigInteger.ZERO)) {
-			factors.add(BigInteger.valueOf(2));
-			number = number.divide(BigInteger.valueOf(2));
-		}
-		for (int i = 3; BigInteger.valueOf(i*i).compareTo(number) <= 0; i+=2) {
-			while(number.mod(BigInteger.valueOf(i)).equals(BigInteger.ZERO)) {
-				factors.add(BigInteger.valueOf(i));
-				number = number.divide(BigInteger.valueOf(i));
-			}
-		}
-		if (number.compareTo(BigInteger.ONE) > 0) {
-			factors.add(number);
-		}
-		return factors;
-	}
-	public static Set<BigInteger> primeFactorsV2(BigInteger number) {
+	// one of the best algorithm for finding prime factors of integer number
+	//is to online compute next prime number and check this prime for number .
+	public static Set<BigInteger> primeFactors(BigInteger number) {
 		Set<BigInteger> factors = new HashSet<BigInteger>();
 		while(number.mod(BigInteger.valueOf(2)).equals(BigInteger.ZERO)) {
 			factors.add(BigInteger.valueOf(2));
