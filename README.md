@@ -1,2 +1,2 @@
 # Mathematical Cryptography
-an intoduction to the mathematical cryptography and see the some of the number theory problem and that solutions in java programming language.
+Set of Math-base Cryptography Methods and Algorithms implemented in java programming language. :kissing_heart: 
