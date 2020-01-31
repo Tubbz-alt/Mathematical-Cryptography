@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.ArrayList; 
 
 public class PrimeFactors {
-	// one of the best algorithm for finding prime factors of integer number
-	//is to online compute next prime number and check this prime for number .
+	// one of the best algorithm for finding prime factors .
 	public static Set<BigInteger> primeFactors(BigInteger number) {
 		Set<BigInteger> factors = new HashSet<BigInteger>();
 		while(number.mod(BigInteger.valueOf(2)).equals(BigInteger.ZERO)) {

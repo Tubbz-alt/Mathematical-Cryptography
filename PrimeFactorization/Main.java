@@ -7,7 +7,7 @@ public class Main {
 	public static BigInteger randomPrime() {
 		BigInteger prime_number;
 		do {
-			prime_number = BigInteger.probablePrime(50, new Random());
+			prime_number = BigInteger.probablePrime(40, new Random());
 		} while (!prime_number.isProbablePrime(1));
 		return prime_number;
 	}
