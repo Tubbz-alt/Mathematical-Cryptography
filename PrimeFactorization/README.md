@@ -4,4 +4,4 @@ In the Mathematical Cryptography one of the most Important theorem is that every
 *from An introduction to the mathematical cryptography (joseph H.silverman) Book*
 ### Implementation
 We need to implement theorem for use its application in the **Mathematical cryptography** , so we need to find efficient algortihm for finding the prime fators of integers number.
-unfortunately we dont have any efficient algorithm for solve the problem in the old computing but with the **Quantum Computing** we able to solve it prefectly , but that need to we have Quantum computer :unamused: , we dont have that .
+one of the efficient way to finding prime factor for big integer use the **nextProbablePrime()** method in the **BigInteger class** of  java , and you can see in the PrimeFactors class in this repo. 
