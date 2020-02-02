@@ -54,7 +54,7 @@ public class Utils {
 	// find primitive root
 	public static BigInteger primitiveRoot(BigInteger prime) {
 		BigInteger phi = prime.subtract(BigInteger.ONE);
-		Set<BigInteger> primeFactors = PrimeFactors.primeFactors(phi);
+		Set<BigInteger> primeFactors = primeFactors(phi);
 		BigInteger generator = BigInteger.ONE;
 		do {
 			generator = generator.add(BigInteger.ONE);
