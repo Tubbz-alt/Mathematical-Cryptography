@@ -1,9 +1,9 @@
 
-import PrimeFactorization.PrimeFactors;
+
 import java.math.*;
 import java.util.*;
 public class PrimitveRootSearch {
-	public static Boolean checkPrimitive(BigInteger number, Set<BigInteger> factors
+	public static Boolean checkPrimitive(BigInteger number, Set<BigInteger> factors,
 		BigInteger phi, BigInteger prime) {
 		for (BigInteger i : factors)
 			if (number.modPow(phi.divide(i), prime).equals(BigInteger.ONE))
